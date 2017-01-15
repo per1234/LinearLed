@@ -1,5 +1,5 @@
 # LinearLed
-A library to get one or several LEDs to dim linear and smooth on your Arduino
+A library to get one or several LEDs to dim linear and smooth on your Arduino. By Mattias Alnervik.
 
 ## Introduction
 You may have noticed that a LED appears to be non-linear when you fade it using analogWrite. The brightness increases quickly for small PWM  values but level out and increases more slowly for bigger values. This phenomenon is caused by our eyes and can be annoying if you want to dim your LED with e.g. a potentiometer or if you just want to fade a LED strip as a nice lighting effect. This library is an attempt to solve this issue by specifying a gamma corrected brightness percentage instead of a duty cycle value. This library have also the ability to set the most common Arduino processors to use 10 bit resolution instead of the standard 8 bit, which yields an even smoother fade.
